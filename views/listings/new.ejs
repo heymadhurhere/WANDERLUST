@@ -1,0 +1,89 @@
+<% layout("/layouts/boilerplate") %>
+<div class="row mt-3">
+  <div class="col-8 offset-2">
+    <body>
+      <br /><br />
+      <h3>Create a new Listing</h3>
+      <form
+        method="post"
+        action="/listings"
+        novalidate
+        class="needs-validation"
+        enctype="multipart/form-data"
+      >
+        <div class="mb-3">
+          <label for="title" class="form-label">Title</label>
+          <input
+            type="text"
+            name="title"
+            class="form-control"
+            placeholder="Add a catchy title"
+            required
+          />
+          <div class="invalid-feedback">Please provide title.</div>
+        </div>
+        <div class="mb-3">
+          <label for="description" class="form-label">Description</label>
+          <textarea
+            type="text"
+            name="description"
+            class="form-control"
+            placeholder="Describe your Property"
+            required
+          ></textarea>
+          <div class="invalid-feedback">Please provide Description.</div>
+        </div>
+        
+
+        <div class="mb-3">
+          <label for="image" class="form-label">Upload Listing Image</label>
+          <input
+            type="file"
+            name="image"
+            class="form-control"
+          />
+        </div>
+        <div class="row">
+          <div class="mb-3 col-md-4">
+            <label for="price" class="form-label">Price</label>
+            <input
+              type="number"
+              name="price"
+              placeholder="eg: 1200"
+              class="form-control"
+              required
+            />
+            <div class="invalid-feedback">Please provide Price.</div>
+          </div>
+
+          <div class="mb-3 col-md-8">
+            <label for="country" class="form-label">Country</label>
+            <input
+              type="text"
+              name="country"
+              placeholder="India"
+              class="form-control"
+              required
+            />
+            <div class="invalid-feedback">Please provide Country.</div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="location" class="form-label">Location</label>
+          <input
+            type="text"
+            name="location"
+            placeholder="Patna"
+            class="form-control"
+            required
+          />
+          <div class="invalid-feedback">Please provide Location.</div>
+        </div>
+
+        <button class="btn btn-dark add-btn">Add</button>
+        <br /><br />
+      </form>
+    </body>
+  </div>
+</div>
