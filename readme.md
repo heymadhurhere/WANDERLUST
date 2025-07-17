@@ -1,4 +1,3 @@
-<code_content>```markdown
 # Wanderlust
 
 Wanderlust is a full-stack web application that allows users to browse, add, and manage vacation rental listings. It is built with Node.js, Express, and MongoDB, and it features a RESTful API for handling listings.
@@ -83,4 +82,3 @@ The following are the main routes available in the application:
 | `PUT`       | `/listings/:id`       | Update a listing by ID           |
 | `DELETE`    | `/listings/:id`       | Delete a listing by ID           |
 ```
-</code_content>
